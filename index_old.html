@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamie McGee</title>
+    <style type="text/css">	
+		
+	.body {
+		background-color: green;
+		}
+	
+	.header {
+		/*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+		min-height: 110px;   */
+		}
+		
+	.header__inner {
+		width: 100%;
+		height: 100px;
+		}
+		
+		
+	.top__logo {
+		position: relative;
+		float: left;
+		width: 50%;
+		height: 100px;
+		}
+	
+	.top__header {
+		position: relative;
+		float: left;
+		width: 50%;
+		height: 100px;
+
+		text-align: right;
+		}
+	
+	.h1 {
+		font-family: 'Lato', sans-serif;
+		color: #2d3c49;
+		text-transform: uppercase;
+		font-size: 0.5em;
+	}
+	
+	.h4 {
+		font-size: 1em;
+		}
+		
+	hr {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		border: 0;
+		border-top: 1px solid #eee;
+		border-color: #02b3e4;
+		}
+		
+      @media screen and (max-width: 500px) {
+      }
+	  
+	  @media screen and (min-width: 600px) {
+      
+		.tiles {
+			width: 33%;
+			float: left;
+			position: relative;
+			min-height: 1px;
+			padding-right: 0px;
+			padding-left: 15px;
+			height: 250px;
+			overflow: hidden;
+			/* this property means height and width inclues padding */
+			box-sizing: border-box;
+		}
+	
+	}
+	  
+	.header__logo {
+		height: 100%;
+	}
+	
+	.container {
+		padding-left: 75px;
+		padding-right: 75px;
+		padding-bottom: 100px;
+	}
+	
+
+	img {
+
+		vertical-align: left;
+	}
+	
+	.adapt {
+		width: 100%;
+	}
+	
+	.subsection {
+		padding-top: 15px;
+		/* hides tiny bit of the photo that sticks of to the right */
+		overflow: hidden;
+	}
+	
+	.centre {
+		margin-left: -15px;
+		margin-right: 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	/*This is the container for the tiles. The flex line means 3 tiles can fit in a row w/ padding. Flex wrap keeps it to 3 items per row-->*/
+	
+	
+	.sub__header {
+		width: 100%;
+        font-size: 4em;
+	}
+	
+    </style>
+
+  </head>
+  <body>
+	<div class="container">
+		<header class="header">
+		  <div class="header__inner">
+			<div class="top__logo">
+				<img class="header__logo" src="img/udacity.png" alt="udacity logo">
+			</div>
+			<div class="top__header h1">
+				<h1 class="header__title">Jamie McGee</h1>
+				<h4>Front-End Ninja</h4>
+			</div>
+		  </div>
+		  
+		</header>
+		<div class="body__container">
+			<hr>
+		<img class="adapt" src="img/tiger.jpg" style=>
+		</div>
+		<div class="subsection">
+			<h1 class="sub__header h1">Featured Work</h1>
+		<div class="centre">
+			<div class="tiles">
+				<img class="adapt" src="img/newtonhill.jpg" alt="picture of newtonhill">
+				<p class="caption h1">Home</p>
+			</div>
+			<div class="tiles">
+				<img class="adapt" src="img/mutrah.jpg" alt="picture of mutrah">
+				<p class="caption h1">The Middle East</p>
+			</div>
+			<div class="tiles">
+				<img class="adapt" src="img/sagrada.jpg" alt="picture of sagrada">
+				<p class="caption h1">Europe</p>
+			</div>
+			<div class="tiles">
+				<img class="adapt" src="img/peak2.jpg" alt="picture of victoria peak">
+				<p class="caption h1">Asia</p>
+			</div>
+		</div>
+		</div>
+	</div>
+  </body>
+</html>

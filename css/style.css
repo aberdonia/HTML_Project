@@ -1,0 +1,160 @@
+body {
+	font: 15px/1.5 'Lato', sans-serif;
+	color: #2d3c49;
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+/* Global (can be out anywhere) */
+.container {
+	padding-right: 100px;
+	padding-left: 100px;
+	overflow: hidden;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+/* Header */
+header {
+	padding-top: 30px;
+	min-height: 70px;
+	/* ensure it displays when responsive */
+}
+
+header #logo {
+	float: left;
+}
+
+header #branding {
+ 	float: right;
+ }
+
+header hr {
+ 	clear: left;
+ 	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: 4px solid #eee;
+	border-color: #7d97ad;
+ }
+
+/* Showcase */
+#showcase {
+	color: #ffffff;
+}
+
+#showcase img {
+	width: 100%;
+}
+
+/* Tiles */
+#tiles {
+	margin-top: 20px;
+}
+
+#tiles .tile {
+	float: left;
+	text-align: center;
+	width: 33.33%;
+	padding-left: 30px;
+	box-sizing: border-box;	
+}
+
+/*means that the edge of tiles alligns with edge of showcase */
+#tiles .container {
+	margin-left: -30px;
+	margin-right: 0px;
+}
+
+#tiles .tile img{
+	width: 100%;
+}
+
+#tiles h1 {
+	margin: 30px;
+	color: #7d97ad;
+}
+
+footer {
+	padding: 20px;
+	margin-top: 20px;
+	color: #fff;
+	background-color: #7d97ad;
+}
+
+/* Responsiveness */
+
+@media(max-width: 1000px){
+	.container {
+		padding-right: 5px;
+		padding-left: 5px;
+		overflow: hidden;
+}
+}
+
+@media(max-width: 800px){
+	body,
+	header #logo,
+	header #branding {
+		width: 100%;
+		text-align: center;
+		font: 12px/1.0 'Lato', sans-serif;
+	}
+
+	#tiles .tile {
+		width: 50%;		
+	}
+
+	h1, h2 {
+		text-align: center;
+	}
+
+	header #logo img {
+		height: 80px;
+	}
+
+	header hr {
+		clear: none;
+	}
+
+	header {
+		padding: 0;
+	}
+
+
+@media(max-width: 500px){
+	body,
+	header #logo,
+	header #branding {
+		width: 100%;
+		float: none;
+		text-align: center;
+		font: 10px/0.5 'Lato', sans-serif;
+	}
+
+	header #logo img {
+		height: 60px;
+	}
+
+	#tiles .tile {
+		width: 100%;
+		
+	}
+
+	h1, h2 {
+		text-align: center;
+	}
+
+	header {
+		padding: 0;
+	}
+
+	hr {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	}
+
+
+}
